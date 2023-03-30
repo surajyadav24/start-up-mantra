@@ -1,0 +1,87 @@
+.card img {
+  width: 100%;
+}
+.card {
+  background-color: transparent;
+  width: 100%;
+  height: 100% !important;
+  border: 1px solid #f1f1f1;
+  perspective: 2000px;
+  border: none !important;
+}
+.card:hover {
+  width: 100%;
+}
+.front-card figure {
+  position: relative;
+}
+.inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+.card figcaption {
+    position: absolute;
+    bottom: 13%;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-family: "Celias";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    }
+.invisible-card {
+  background-color: white !important;
+}
+.invisible-card {
+  height: 300px;
+  border-width: 4px;
+  border-style: solid !important;
+  border-color: transparent !important;
+  border: double 2px transparent;
+border-radius: 8px;  
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left,#40BF52, #CBFFD2 );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transform: rotateX(180deg);
+}
+.invisible-card, .front-card {
+  top: -201px;
+  position: absolute;
+  width: 100%;
+  height: 396px!important;
+  backface-visibility: hidden;
+}
+
+
+.card:hover .inner-box {
+  transform: rotateX(180deg);
+}
+
+.invisible-card h2 {
+  padding: 30px 0px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+.invisible-card p {
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #4b6183;
+}

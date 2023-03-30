@@ -1,0 +1,103 @@
+.slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 568px;
+}
+
+.swiperslidepara {
+    margin: 0px 12px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: -1;
+    background-color: #fff;
+    padding: 16px 10px;
+    font-family: "Celias";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #4b6183;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    width: 83.5% !important;
+    height: 143px !important;
+}
+.swiper-wrapper {
+  margin: 0px 35px;
+  width: 452px !important;
+  height: 250px !important;
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+}
+.profile .icon {
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+.discription {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.swiperslidepara::before {
+  content: "";
+  position: absolute;
+  z-index: 99 !important;
+  top: 90%;
+  left: 25px;
+  width: 30px;
+  height: 30px;
+  transform: matrix(1, 0, 0, -1, 0, 0) rotate(-135deg);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  background-color: #fff;
+}
+.profile {
+  background-color: #fff;
+}
+.slider-wrapper::after {
+    transform: rotate(13deg);
+    position: absolute;
+    top: -25px;
+    left: -31px;
+    z-index: -99;
+  content: url(../images/testimonial-bg.png);
+}
+ .swiper-button-prev:after {
+  font-family: "Bootstrap-icons";
+  content: "\F12F";
+  position: absolute;
+  left: -9px;
+  top: -47px;
+  font-size: 21px;
+  padding: 4px;
+  color: #20406f;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #20406f;
+  border-radius: 50%;
+}
+ .swiper-button-next:after {
+  font-family: "Bootstrap-icons";
+  content: "\F138";
+  position: absolute;
+  left: 6px;
+  top: -47px;
+  font-size: 21px;
+  padding: 4px;
+  color: #20406f;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #20406f;
+  border-radius: 50%;
+}
+.slider-section {
+    vertical-align: middle;
+
+    padding: 100px;
+}
+.swiper-button-prev:hover ::after{
+    background-color: #000;
+}

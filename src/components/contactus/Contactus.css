@@ -1,0 +1,103 @@
+.form-wrapper {
+    padding-top: 50px;
+    margin-bottom: -50px;
+    width: 393px;
+    margin: 0 auto;
+    height: 380px;
+    background: url(../images/card-bg-form.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form-heading h2 {
+  padding: 20px 0px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.form-wrapper input,
+textarea {
+  margin: 8px auto;
+  background: #ffffff26;
+  border-radius: 2px;
+  width: 230px;
+  display: block;
+  outline: none;
+  border: none;
+}
+.form-wrapper input::placeholder,
+textarea::placeholder {
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  color: #ffffff9c;
+  padding: 0px 8px;
+}
+textarea::placeholder {
+  padding: 4px 8px !important;
+}
+.form-wrapper .btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  display: block;
+  width: 230px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+  height: 33px;
+  background: #39d950;
+  border-radius: 2px;
+}
+.contactus-heading h2 {
+  margin-top: 60px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 36px;
+  color: #20406f;
+}
+.contact-para {
+    padding: 15px 0px;
+    width: 57%;
+    font-family: "Celias";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #4b6183;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.icon-wrapper p {
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #4b6183;
+}
+.icon-wrapper .icon img {
+  margin-top: 0px;
+  width: 18px;
+  margin-right: 10px;
+}
+.footer-wrapper {
+    padding: 20px 0px;
+  background: #122079;
+  border-radius: 100px 0px 0px 0px;
+}

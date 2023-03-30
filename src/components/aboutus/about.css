@@ -1,0 +1,61 @@
+.heading {
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #20406f;
+  text-align: center;
+}
+.abt-paragraph {
+  width: 600px;
+  margin: 0 auto;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #4b6183;
+}
+section {
+  padding: 40px 0px;
+}
+.abt {
+  background: url(../images/abt-bg.png) no-repeat;
+  background-size: cover;
+}
+.abt-img {
+  width: 230px;
+  margin: 0 auto;
+}
+.abt-img img {
+  width: 223px;
+}
+.about-us-wrapper {
+  height: 448px;
+}
+
+.meeting,
+.abt-discription {
+  position: relative;
+
+}
+.meeting img {
+  width: 100%;
+}
+.abt-discription {
+  padding-top: 125px;
+}
+.abt-discription button {
+  background: #40bf52;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: none;
+}
+.abt-discription button:hover {
+  background: #40bf52;
+}
+
+
+

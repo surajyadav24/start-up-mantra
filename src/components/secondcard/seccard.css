@@ -1,0 +1,98 @@
+.seccard-wrapper {
+  margin: 20px 0px;
+  width: 280px;
+  height: 285px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.06);
+}
+.seccard-wrapper .sec-small-card {
+  width: 280px;
+  height: 285px;
+  padding: 0px 10px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.seccard-wrapper:hover .heading {
+  transition: all 1s ease;
+  transform: translate(0px, -43px);
+
+  margin: 10px 0px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
+.seccard-wrapper:hover .sec-para {
+  transform: translate(0px, -38px);
+}
+.seccard-wrapper:hover .card-icon{
+  transform: translate(0px, -38px);
+}
+.seccard-wrapper:hover {
+  background: #40bf52;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.06);
+}
+.seccard-wrapper:hover .sec-small-card {
+
+  text-align: center;
+  width: 280px;
+  height: 250px;
+  position: absolute;
+  padding: 0px 10px;
+  background: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 18%;
+}
+.seccard-wrapper .heading {
+  margin: 10px 0px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #40bf52;
+}
+.seccard-wrapper .sec-para {
+  padding-top: 10px 0px;
+  padding: 10px 15px;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #334764;
+}
+.card-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-icon img{
+  text-align: center;
+  width: 40px;
+  margin: 0 auto;
+}
+.seccard-wrapper:nth-child(4) .card-icon img{
+  width: 30px;
+}
+.icon-2 {
+  display: none;
+}
+.seccard-wrapper:hover .icon-1{
+display: none;
+}
+.seccard-wrapper:hover .icon-2{
+display: block;
+}
+.services {
+  background: url(../images/services-bg.png) no-repeat;
+  background-size: contain;
+  background-position-y: 100%;
+} 
