@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Form, Button, FormControl } from "react-bootstrap";
-
+import axios from "axios";
 const steps = ["", "", "", "", "", ""];
 
 const MultiStepForm = () => {
-  const [formData, setFormData] = useState({
-
-  });
+  const [formData, setFormData] = useState({});
   const [activeStep, setActiveStep] = useState(0);
   const [completed, setCompleted] = useState(false);
 
@@ -25,7 +23,16 @@ const MultiStepForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
+    const data = { ...formData };
+    axios
+      .post(
+        "https://sheet.best/api/sheets/523a0668-0032-4e7d-849e-913f9a22b963",
+        data
+      )
+      .then((response) => {
+        console.log(response);
+        setFormData("");
+      });
     console.log(formData);
     setCompleted(true);
     setFormData({});
@@ -37,6 +44,7 @@ const MultiStepForm = () => {
       case 0:
         return (
           <>
+          <form onSubmit={handleNext} >
             <div className="container">
               <div className="row">
                 <p className="form-heading">
@@ -51,6 +59,9 @@ const MultiStepForm = () => {
                   name="name"
                   value={formData.name || ""}
                   onChange={handleInputChange}
+                    isRequired={
+                      true
+                    }
                 />
                 <FormControl
                   className=" input-box"
@@ -59,25 +70,31 @@ const MultiStepForm = () => {
                   name="address"
                   value={formData.address || ""}
                   onChange={handleInputChange}
+                  isRequired
                 />
                 <FormControl
-                  className=" input-box"
-                  type="tel"
+                  className="input-box"
                   placeholder="phone no."
-                  name="phone no."
-                  value={formData.address || ""}
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone || ""}
                   onChange={handleInputChange}
+                  isRequired
                 />
                 <FormControl
                   className="input-box"
                   type="text"
                   placeholder="company name"
-                  name="company name"
-                  value={formData.address || ""}
+                  name="companyname"
+                  value={formData.companyname || ""}
                   onChange={handleInputChange}
+                  isRequired
+
                 />
               </div>
             </div>
+            </form>
           </>
         );
       case 1:
@@ -93,9 +110,9 @@ const MultiStepForm = () => {
                   <input
                     type="radio"
                     id="companyexist"
-                    name="company-exist"
+                    name="companyexist"
                     className="mx-2"
-                    value={formData.companyexist || ""}
+                    value={formData.companyexist || "companyexist"}
                     onChange={handleInputChange}
                   />
                   <label for="company-exist">Yes</label>
@@ -104,9 +121,9 @@ const MultiStepForm = () => {
                   <input
                     type="radio"
                     id="companynotexist"
-                    name="company-exist"
+                    name="companyexist"
                     className="mx-2"
-                    value={formData.notexist || ""}
+                    value={formData.notexist || "notexist"}
                     onChange={handleInputChange}
                   />
                   <label for="company-exist">no</label>
@@ -126,7 +143,7 @@ const MultiStepForm = () => {
                   <input
                     type="radio"
                     id="Proprietor"
-                    name="company-type"
+                    name="companytype"
                     className="mx-2"
                     value={formData.Proprietor || ""}
                     onChange={handleInputChange}
@@ -137,9 +154,9 @@ const MultiStepForm = () => {
                   <input
                     type="radio"
                     id="PartnershipFirm"
-                    name="company-type"
+                    name="companytype"
                     className="mx-2"
-                    value={formData.PartnershipFirm || ""}
+                    value={formData.PartnershipFirm || "PartnershipFirm"}
                     onChange={handleInputChange}
                   />
                   <label for="company-type">Partnership Firm</label>
@@ -148,9 +165,9 @@ const MultiStepForm = () => {
                   <input
                     type="radio"
                     id="Private-Limited"
-                    name="company-type"
+                    name="companytype"
                     className="mx-2"
-                    value={formData.PrivateLimited || ""}
+                    value={formData.PrivateLimited || "PrivateLimited"}
                     onChange={handleInputChange}
                   />
                   <label for="company-type">Private Limited</label>
@@ -172,7 +189,7 @@ const MultiStepForm = () => {
                     id="Basic-Startup-Kit"
                     name="startup-kit"
                     className="mx-2"
-                    value={formData.BasicStartupKit || ""}
+                    value={formData.BasicStartupKit || "BasicStartupKit"}
                     onChange={handleInputChange}
                   />
                   <label for="startup-kit">Basic Startup Kit</label>
@@ -183,6 +200,8 @@ const MultiStepForm = () => {
                     id="Premium-Startup-Kit"
                     name="startup-kit"
                     className="mx-2"
+                    value={formData.premiumStartupKit || "premiumStartupKit"}
+                    onChange={handleInputChange}
                   />
                   <label for="startup-kit">Premium Startup Kit</label>
                 </div>
@@ -192,6 +211,8 @@ const MultiStepForm = () => {
                     id="E-Commerce-Startup-Bundle-Kit"
                     name="startup-kit"
                     className="mx-2"
+                    value={formData.EcomStartupKit || "EcomStartupKit"}
+                    onChange={handleInputChange}
                   />
                   <label for="startup-kit">E-Commerce Startup Bundle Kit</label>
                 </div>
@@ -212,6 +233,8 @@ const MultiStepForm = () => {
                     id="Website-Development"
                     name="services"
                     className="mx-2"
+                    value={formData.Websitedevelopment || "Websitedevelopment"}
+                    onChange={handleInputChange}
                   />
                   <label for="Website-Development">Website Development</label>
                 </div>
@@ -221,6 +244,10 @@ const MultiStepForm = () => {
                     id="Social-Media-Marketing"
                     name="services"
                     className="mx-2"
+                    value={
+                      formData.SocialMediaMarketing || "SocialMediaMarketing"
+                    }
+                    onChange={handleInputChange}
                   />
                   <label for="startup-kit">Social Media Marketing</label>
                 </div>
@@ -230,6 +257,8 @@ const MultiStepForm = () => {
                     id="Google-Ads"
                     name="services"
                     className="mx-2"
+                    value={formData.Goolgeads || "Goolgeads"}
+                    onChange={handleInputChange}
                   />
                   <label for="startup-kit">Google Ads</label>
                 </div>
@@ -239,6 +268,8 @@ const MultiStepForm = () => {
                     id="Search-Engine-Optimization"
                     name="services"
                     className="mx-2"
+                    value={formData.SEO || "SEO"}
+                    onChange={handleInputChange}
                   />
                   <label for="startup-kit">Search Engine Optimization</label>
                 </div>
@@ -255,7 +286,7 @@ const MultiStepForm = () => {
               <p className="intrested">
                 Are you interested in getting free consultation?
               </p>
-            
+
               <div className="inputs-wrapper d-flex flex-row justify-content-start  ">
                 <div className="input-div d-flex justify-content-start">
                   <input
@@ -263,6 +294,8 @@ const MultiStepForm = () => {
                     id="interested"
                     name="intrest"
                     className="mx-2"
+                    value={formData.intrested || "intrested"}
+                    onChange={handleInputChange}
                   />
                   <label for="company-exist">Yes</label>
                 </div>
@@ -272,6 +305,8 @@ const MultiStepForm = () => {
                     id="not-interested"
                     name="intrest"
                     className="mx-2"
+                    value={formData.notintrested || "notintrested"}
+                    onChange={handleInputChange}
                   />
                   <label for="company-exist">no</label>
                 </div>
@@ -310,6 +345,7 @@ const MultiStepForm = () => {
             onClick={
               activeStep === steps.length - 1 ? handleSubmit : handleNext
             }
+            
           >
             {activeStep === steps.length - 1 ? "Submit" : "Next"}
           </Button>
@@ -321,18 +357,18 @@ const MultiStepForm = () => {
   return (
     <div style={{ textAlign: "center" }}>
       {completed ? (
-       <div className="container">
-       <div className="row">
-         <div className="col-md-6 col-lg-6 col-xl-6">
-           <div className="form-wraper">
-        <div className="thanks">
-        <p className="form-heading">Thank</p>
-              <p className="stroke-heading">You !</p>
-        </div>
-           </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 col-lg-6 col-xl-6">
+              <div className="form-wraper">
+                <div className="thanks">
+                  <p className="form-heading">Thank</p>
+                  <p className="stroke-heading">You !</p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
       ) : (
         <>
           <div className="container">
