@@ -26,12 +26,9 @@ section {
   background-size: cover;
 }
 .abt-img {
-  width: 230px;
-  margin: 0 auto;
+text-align: center;
 }
-.abt-img img {
-  width: 223px;
-}
+
 .about-us-wrapper {
   height: 448px;
 }

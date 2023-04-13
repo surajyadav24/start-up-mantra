@@ -1,0 +1,160 @@
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .abt {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sub-heading {
+    margin-bottom: 30px;
+  }
+  .abt-discription {
+    padding-top: 125px;
+    width: 80%;
+  }
+  .abt-discription p {
+    font-family: "Celias";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+    color: #4b6183;
+  }
+
+  .card-root {
+    width: 80%;
+  }
+
+  .services {
+    padding: 100px 0px;
+    background-size: 100% 50%;
+    background-position: 50% 100%;
+  }
+
+  .abt-img img {
+    width: 508px;
+    padding: 20px 0px;
+  }
+  .abt-stat-wrap {
+    padding: 200px 0px;
+    background-size: 100% 74%;
+    background-repeat: no-repeat;
+    background-position: 50% 44%;
+  }
+
+  .form-wrapper {
+    padding-top: 86px;
+    margin-bottom: -50px;
+    width: 437px;
+    margin-right: 0px;
+    height: 606px;
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .form-wrapper input,
+  textarea {
+    margin: 31px auto;
+    background: #ffffff26;
+    border-radius: 2px;
+    width: 81%;
+    height: 47px;
+    display: block;
+    outline: none;
+    border: none;
+  }
+  .contact-us {
+    padding: 0px;
+    min-height: 736px;
+  }
+  .form-wrapper .btn-primary {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .card-root {
+    width: 80%;
+  }
+  .abt-stat-wrap {
+    padding-bottom: 0px !important;
+    padding: 120px 0px;
+    background-size: 100% 49%;
+    background-repeat: no-repeat;
+    background-position: 50% 77%;
+  }
+  .meeting img {
+    width: 67%;
+  }
+  .abt-discription p {
+    width: 59%;
+  }
+}
+@media (min-width: 280px) and (max-width: 425px) {
+  .abt-paragraph {
+    width: 100%;
+  }
+  .input-box {
+    width: 95%;
+  }
+  .slider-wrapper {
+    width: 100%;
+  }
+
+  .slider-section {
+    vertical-align: middle;
+    padding: 5px;
+  }
+  .swiper-slide {
+    width: 60% !important;
+  }
+  .swiperslidepara {
+    font-size: 10px;
+    line-height: 15px;
+    width: 70% !important;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .abt-img img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-wraper {
+    width: 100%;
+  }
+  .form-heading {
+    font-family: "Celias";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .stroke-heading {
+    font-size: 35px;
+  }
+  .input-div label {
+    font-size: 14px;
+  }
+  .input-div input[type="radio"] {
+    height: 39px;
+    width: 17px;
+  }
+  .about-us-wrapper {
+    min-height: 319px;
+  }
+  .seccard-wrapper:hover .sec-small-card {
+    width: 100%;
+  }
+  .seccard-wrapper {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .seccard-wrapper .sec-small-card {
+    width: 100%;
+  }
+}

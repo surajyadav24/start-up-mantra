@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+
 import "bootstrap-icons/font/bootstrap-icons.css";
 import MyButton from "./components/button";
 import Card from "./components/cards/card";
@@ -26,6 +27,9 @@ import ContactusContent from "./components/contactus/ContactusContent";
 import Contactus from "./components/contactus/Contactus";
 import Footer from "./components/footer/Footer";
 import Startupshine from "./components/startupshine/Startupshine";
+import MultiStepForm from "./components/multistepform/form";
+import "./Responsive.css";
+
 function App() {
   const firsticoncard = [
     "./components/images/first-icon.png",
@@ -35,89 +39,89 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <div className="header-wrapper">
+        <Header />
+        <MultiStepForm /> 
+      </div>
       <Aboutus />
-      <section className="about-us-wrapper">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4 col-lg-4 col-sm-4">
-              <div className="card-wrapper">
-                <Card
-                  image={firstcardimg}
-                  alt="Example image"
-                  kit="Basic Startup Kit"
-                  invisibleheading="Basic Startup Kit"
-                  invisiblepara={[
 
-                   ' Logo Design',
-                   ' 1 Year Domain and Hosting',
-                   ' 4 Page Website Design',
-                  '  3 business email Ids',
-                  '  Social Media Page Creation',
-                    ' Facebook/Instagram/LinkedIn/Twitter',
-                    'One Time One Page SEO',
-                    'One Month Local SEO'
-                  ]}
-                
-                />
+      <div className="abt-stat-wrap">
+        <section className="about-us-wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4 col-lg-4 col-sm-4">
+                <div className="card-wrapper">
+                  <Card
+                    image={firstcardimg}
+                    alt="Example image"
+                    kit="Basic Startup Kit"
+                    invisibleheading="Basic Startup Kit"
+                    invisiblepara={[
+                      " Logo Design",
+                      " 1 Year Domain and Hosting",
+                      " 4 Page Website Design",
+                      "  3 business email Ids",
+                      "  Social Media Page Creation",
+                      " Facebook/Instagram/LinkedIn/Twitter",
+                      "One Time One Page SEO",
+                      "One Month Local SEO",
+                    ]}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="col-md-4 col-lg-4 col-sm-4">
-              <div className="card-wrapper">
-                <Card
-                  image={secondcardimg}
-                  alt="Example image"
-                  kit="Premium Startup Kit"
-                  invisibleheading="Basic Startup Kit"
-                  invisiblepara={[
-
-                    ' Logo Design',
-                    ' 1 Year Domain and Hosting',
-                    ' 4 Page Website Design',
-                   '  3 business email Ids',
-                   '  Social Media Page Creation',
-                     ' Facebook/Instagram/LinkedIn/Twitter',
-                     'One Time One Page SEO',
-                     'One Month Local SEO'
-                   ]}
-                />
+              <div className="col-md-4 col-lg-4 col-sm-4">
+                <div className="card-wrapper">
+                  <Card
+                    image={secondcardimg}
+                    alt="Example image"
+                    kit="Premium Startup Kit"
+                    invisibleheading="Basic Startup Kit"
+                    invisiblepara={[
+                      " Logo Design",
+                      " 1 Year Domain and Hosting",
+                      " 4 Page Website Design",
+                      "  3 business email Ids",
+                      "  Social Media Page Creation",
+                      " Facebook/Instagram/LinkedIn/Twitter",
+                      "One Time One Page SEO",
+                      "One Month Local SEO",
+                    ]}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="col-md-4 col-lg-4 col-sm-4">
-              <div className="card-wrapper">
-                <Card
-                  image={thirdcardimg}
-                  alt="Example image"
-                  title="Example title"
-                  kit="E-Commerce Startup Bundle  Kit"
-                  invisibleheading="Basic Startup Kit"
-                  invisiblepara={[
-
-                    ' Logo Design',
-                    ' 1 Year Domain and Hosting',
-                    ' 4 Page Website Design',
-                   '  3 business email Ids',
-                   '  Social Media Page Creation',
-                     ' Facebook/Instagram/LinkedIn/Twitter',
-                     'One Time One Page SEO',
-                     'One Month Local SEO'
-                   ]}
-                />
+              <div className="col-md-4 col-lg-4 col-sm-4">
+                <div className="card-wrapper">
+                  <Card
+                    image={thirdcardimg}
+                    alt="Example image"
+                    title="Example title"
+                    kit="E-Commerce Startup Bundle  Kit"
+                    invisibleheading="Basic Startup Kit"
+                    invisiblepara={[
+                      " Logo Design",
+                      " 1 Year Domain and Hosting",
+                      " 4 Page Website Design",
+                      "  3 business email Ids",
+                      "  Social Media Page Creation",
+                      " Facebook/Instagram/LinkedIn/Twitter",
+                      "One Time One Page SEO",
+                      "One Month Local SEO",
+                    ]}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="startupshine">
-        <div className="container">
-          <div className="row">
-            <Startupshine
-            phone=" +91-9599449323"
-            />
+        </section>
+        <section className="startupshine">
+          <div className="container">
+            <div className="row">
+              <Startupshine phone=" +91-9599449323" />
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="services">
+        </section>
+      </div>
+      <section className="services" id="services">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -175,12 +179,10 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-sm-12 col-md-12">
-            <div className="heading-wrapper">
-                  <h2 class="heading">What are Clients says?</h2>
-                  <p class="sub-heading">
-                  Our Solutions,Your Business Growth
-                  </p>
-                </div>
+              <div className="heading-wrapper">
+                <h2 class="heading">What are Clients says?</h2>
+                <p class="sub-heading">Our Solutions,Your Business Growth</p>
+              </div>
               <div className="slider-wrapper">
                 <TestimonialSlider />
               </div>
@@ -189,7 +191,7 @@ function App() {
         </div>
       </section>
 
-      <section className="contact-us">
+      <section className="contact-us" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">

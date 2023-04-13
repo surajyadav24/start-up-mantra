@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
+/* .header {
   background: url("../images/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 602px;
   height: 367px;
-}
+} */
 
 .navbar {
   justify-content: space-between;

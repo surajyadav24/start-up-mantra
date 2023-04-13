@@ -17,6 +17,13 @@
   padding: 0px;
   box-sizing: border-box;
 }
+.header-wrapper {
+  background: url(./components/images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 602px;
+}
 .card-wrapper {
   top: 150px;
   position: relative;
@@ -59,11 +66,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.startupshine {
+.abt-stat-wrap{
   background: url(./components/images/wave.png) no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 17%;
 }
 .sub-heading {
   font-family: "Celias";
@@ -112,4 +119,10 @@
 .bi-telephone-fill{
 color: #fff;
 margin-right:5px;
+}
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
 }

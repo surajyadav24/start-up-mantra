@@ -3,7 +3,7 @@ import "./card.css";
 function Card(props) {
   return (
     <>
-      <div className="card">
+      <div className="card" >
         <div className="inner-box">
           <div className="invisible-card">
             <h2>{props.invisibleheading}</h2>

@@ -22,16 +22,20 @@ function Footer() {
                 </p>
                 <div className="social">
                   <div className="social-icon">
-                    <img src={fb} alt="" />
+                    <a href="https://www.facebook.com/startupmantras">
+                      <img src={fb} alt="facebook" />
+                    </a>
                   </div>
                   <div className="social-icon">
-                    <img src={insta} alt="" />
+                    <img src={insta} alt="insta" />
                   </div>
                   <div className="social-icon">
-                    <img src={twitter} alt="" />
+                    <img src={twitter} alt="twitter" />
                   </div>
                   <div className="social-icon">
-                    <img src={linkedin} alt="" />
+                    <a href="https://www.linkedin.com/company/startup-mantra/">
+                      <img src={linkedin} alt="twitter" />
+                    </a>
                   </div>
                 </div>
               </div>
