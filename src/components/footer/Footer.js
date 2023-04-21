@@ -26,12 +26,8 @@ function Footer() {
                       <img src={fb} alt="facebook" />
                     </a>
                   </div>
-                  <div className="social-icon">
-                    <img src={insta} alt="insta" />
-                  </div>
-                  <div className="social-icon">
-                    <img src={twitter} alt="twitter" />
-                  </div>
+                
+                
                   <div className="social-icon">
                     <a href="https://www.linkedin.com/company/startup-mantra/">
                       <img src={linkedin} alt="twitter" />
@@ -43,11 +39,11 @@ function Footer() {
             <div className="col-lg-4 col-xl-4 col-sm-4 ">
               <h3 className="ul-heading">Services</h3>
               <ul>
-                <li>Social Media Marketing</li>
-                <li>Digital Marketing</li>
-                <li>Graphic Designing</li>
-                <li>Mobile App Development</li>
+                <li>Company Registration</li>
                 <li>Website Development</li>
+                <li>Graphic Designing</li>
+                <li>Digital Marketing</li>
+                <li>Mobile App Development</li>
               </ul>
             </div>
             <div className="col-lg-3 col-xl-3 col-sm-3 ">

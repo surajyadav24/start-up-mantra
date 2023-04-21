@@ -1,15 +1,15 @@
 .seccard-wrapper {
   margin: 20px 0px;
-  width: 280px;
-  height: 285px;
+  width: 360px;
+  height: 394px;
   position: relative;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.06);
 }
 .seccard-wrapper .sec-small-card {
-  width: 280px;
-  height: 285px;
+  width: 360px;
+  height: 377px;
   padding: 0px 10px;
   background: #ffffff;
   border-radius: 8px;
@@ -17,7 +17,6 @@
 .seccard-wrapper:hover .heading {
   transition: all 1s ease;
   transform: translate(0px, -43px);
-
   margin: 10px 0px;
   font-family: "Celias";
   font-style: normal;
@@ -38,10 +37,9 @@
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.06);
 }
 .seccard-wrapper:hover .sec-small-card {
-
   text-align: center;
-  width: 280px;
-  height: 250px;
+  width: 360px;
+  height: 330px;
   position: absolute;
   padding: 0px 10px;
   background: #ffffff;
@@ -58,9 +56,12 @@
   text-align: center;
   color: #40bf52;
 }
+.seccard-wrapper:hover .sec-para{
+  padding: 12px 15px !important;
+}
 .seccard-wrapper .sec-para {
   padding-top: 10px 0px;
-  padding: 10px 15px;
+  padding: 22px 15px;
   font-family: "Celias";
   font-style: normal;
   font-weight: 400;
@@ -69,6 +70,9 @@
   text-align: center;
   color: #334764;
 }
+.third-icon-wrap .card-icon img{
+  width: 50px;
+}
 .card-icon{
   display: flex;
   justify-content: center;
@@ -76,11 +80,17 @@
 }
 .card-icon img{
   text-align: center;
-  width: 40px;
+  max-width: 77px;
   margin: 0 auto;
 }
 .seccard-wrapper:nth-child(4) .card-icon img{
-  width: 30px;
+  width: 77px;
+}
+.seccard-wrapper:nth-child(5) .card-icon img{
+  width: 61px;
+}
+.seccard-wrapper:nth-child(7) .card-icon img{
+  width: 55px;
 }
 .icon-2 {
   display: none;

@@ -1,14 +1,15 @@
 .form-wrapper {
-    padding-top: 50px;
-    margin-bottom: -50px;
-    width: 393px;
-    margin: 0 auto;
-    height: 380px;
-    background: url(../images/card-bg-form.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  padding-top: 50px;
+  margin-bottom: -50px;
+  width: 507px;
+  margin: 0 auto;
+  height: 510px;
+  background: url(../images/card-bg-form.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .form-heading h2 {
   padding: 20px 0px;
   font-family: "Celias";
@@ -19,36 +20,45 @@
   text-align: center;
   color: #ffffff;
 }
+
+.form-wrapper textarea {
+  height: 60px !important;
+}
+
 .form-wrapper input,
 textarea {
-  margin: 8px auto;
+  margin: 25px auto;
   background: #ffffff26;
   border-radius: 2px;
-  width: 230px;
+  width: 55%;
+  height: 34px;
   display: block;
   outline: none;
   border: none;
 }
+
 .form-wrapper input::placeholder,
 textarea::placeholder {
   font-family: "Celias";
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 15px;
   color: #ffffff9c;
   padding: 0px 8px;
 }
+
 textarea::placeholder {
   padding: 4px 8px !important;
 }
+
 .form-wrapper .btn-primary {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px auto;
   display: block;
-  width: 230px;
+  width: 55%;
   font-family: "Celias";
   font-style: normal;
   font-weight: 700;
@@ -59,45 +69,54 @@ textarea::placeholder {
   background: #39d950;
   border-radius: 2px;
 }
+.input-cont{
+  color: #fff;
+  padding-left: 5px;
+}
+
 .contactus-heading h2 {
   margin-top: 60px;
   font-family: "Celias";
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 35px;
   line-height: 36px;
   color: #20406f;
 }
+
 .contact-para {
-    padding: 15px 0px;
-    width: 57%;
-    font-family: "Celias";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
-    color: #4b6183;
+  padding: 15px 0px;
+  width: 80%;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4b6183;
 }
+
 .icon-wrapper {
   display: flex;
   justify-content: start;
   align-items: start;
 }
+
 .icon-wrapper p {
   font-family: "Celias";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 22px;
   color: #4b6183;
 }
+
 .icon-wrapper .icon img {
   margin-top: 0px;
-  width: 18px;
   margin-right: 10px;
 }
+
 .footer-wrapper {
-    padding: 20px 0px;
+  padding: 40px 0px;
   background: #122079;
   border-radius: 100px 0px 0px 0px;
 }

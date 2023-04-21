@@ -1,0 +1,6 @@
+ .swiper-slide img{
+    max-width: 117px;
+  }
+  .slider-client .swiper-slide {
+    padding: 50px!important;
+  }

@@ -24,13 +24,14 @@
   width: 300px;
 }
 .nav-link {
-  font-family: 'Celias';
+  color: #fff;
+  font-family: Celias;
+  font-size: 19px;
+  letter-spacing: 0.45px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
   line-height: 18px;
-  color: #FFFFFF;
-  margin: 0px 11px;
+  margin: 0 11px;
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -45,7 +46,7 @@
   text-align: left;
 }
 .green-heading {
-  color: #40bf52;
+  color: #fff;
 }
 .stroke-heading {
   margin-top: -13px;
@@ -55,8 +56,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.5px #fff;
+color: #40bf52;
 }
 .form-wraper {
   min-height: 525px;

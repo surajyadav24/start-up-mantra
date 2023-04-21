@@ -21,7 +21,7 @@
   }
 
   .card-root {
-    width: 80%;
+    width: 100%;
   }
 
   .services {
@@ -35,10 +35,11 @@
     padding: 20px 0px;
   }
   .abt-stat-wrap {
-    padding: 200px 0px;
-    background-size: 100% 74%;
+    padding-bottom: 0px !important;
+    padding: 30px 0px;
+    background-size: 100% 69%;
     background-repeat: no-repeat;
-    background-position: 50% 44%;
+    background-position: 50% 65%;
   }
 
   .form-wrapper {
@@ -73,23 +74,61 @@
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .card-root {
-    width: 80%;
+    width: 100%;
   }
   .abt-stat-wrap {
     padding-bottom: 0px !important;
-    padding: 120px 0px;
-    background-size: 100% 49%;
+    padding: 30px 0px;
+    background-size: 100% 69%;
     background-repeat: no-repeat;
-    background-position: 50% 77%;
+    background-position: 50% 65%;
   }
   .meeting img {
-    width: 67%;
+    width: 100%;
   }
   .abt-discription p {
-    width: 59%;
+    width: 78%;
   }
 }
 @media (min-width: 280px) and (max-width: 425px) {
+
+  .col-md-4.col-lg-4.col-sm-12.col-xs-12.card-column {
+    height: 500px;
+}
+.seccard-wrapper:hover .sec-small-card {
+ 
+  width: 360px;
+  height: 355px;}
+
+.startupshine {
+  padding: 1043px 0px;
+  padding-bottom: 50px !important;
+}
+.seccard-wrapper{
+  height:411px;
+}
+.about-us-wrapper {
+  min-height: 100vh;
+}
+.contact-us {
+  background: #e9f1f7 !important;
+  padding: 0px;
+}
+
+.form-wrapper input, textarea {
+  width: 80%;
+}
+.form-wrapper .btn-primary {
+  width: 80%;
+}
+
+.sub-heading {
+  width: 100%;
+  font-family: "Celias";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
   .abt-paragraph {
     width: 100%;
   }
@@ -116,8 +155,12 @@
     width: 100%;
   }
   .abt-img img {
+    display: none;
     width: 100%;
     margin: 0 auto;
+  }
+  .abt {
+    padding: 80px 0px;
   }
   .form-wraper {
     width: 100%;
@@ -150,11 +193,40 @@
   .seccard-wrapper:hover .sec-small-card {
     width: 100%;
   }
+
   .seccard-wrapper {
     margin: 20px 0px;
     width: 100%;
   }
+
   .seccard-wrapper .sec-small-card {
     width: 100%;
   }
+  .swiper-slide.swiper-slide-visible.swiper-slide-next {
+    opacity: 1 !important;
 }
+ 
+}
+@media (min-width: 280px) and (max-width: 375px) {
+  .swiperslidepara {
+    width: 90% !important;
+}
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .swiperslidepara {
+    width: 90% !important;
+}
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .swiperslidepara {
+    width: 94% !important;
+}
+}
+@media (min-width: 400px) and (max-width: 425px) {
+  .swiperslidepara {
+    margin-bottom: 40px !important;
+    margin: 6px 27px;
+}
+}
+
+

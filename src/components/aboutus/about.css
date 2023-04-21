@@ -8,25 +8,34 @@
   text-align: center;
 }
 .abt-paragraph {
-  width: 600px;
-  margin: 0 auto;
-  font-family: "Celias";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
   color: #4b6183;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+}
+.abt-img {
+  padding-top: 22px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 section {
   padding: 40px 0px;
 }
 .abt {
+  min-height: 400px;
   background: url(../images/abt-bg.png) no-repeat;
   background-size: cover;
 }
 .abt-img {
 text-align: center;
+}
+.heading-wrapper{
+  padding: 20px 0px;
 }
 
 .about-us-wrapper {
@@ -42,7 +51,7 @@ text-align: center;
   width: 100%;
 }
 .abt-discription {
-  padding-top: 125px;
+  padding-top: 107px;
 }
 .abt-discription button {
   background: #40bf52;
