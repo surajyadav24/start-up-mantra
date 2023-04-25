@@ -20,7 +20,7 @@ function Startupshine(props) {
       </p>
       <a  className='btn btn-primary' href={`tel:${props.phone}`}>
       <i class="bi bi-telephone-fill"></i>
-        +91-9599449323</a>
+        +91-9667729323</a>
     </div> 
   </div>
   </>

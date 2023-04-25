@@ -91,10 +91,25 @@
   }
 }
 @media (min-width: 280px) and (max-width: 425px) {
+  .navbar-toggler-icon{
+    background-image: url(../src/components/images/hamburger.png)!important;
+  }
 
   .col-md-4.col-lg-4.col-sm-12.col-xs-12.card-column {
     height: 500px;
 }
+.whatsapp-wrap{
+  right: 10px;
+}
+.call-wrap{
+  left: 10px;
+}
+.whatsapp-wrap img{
+  width: 40px;
+}
+.call-wrap img{
+  width:40px ;
+  }
 .seccard-wrapper:hover .sec-small-card {
  
   width: 360px;

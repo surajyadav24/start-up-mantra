@@ -91,6 +91,8 @@ const MultiStepForm = () => {
     const checkboxName = event.target.name;
     const isChecked = event.target.checked;
     setCheckboxValues({ ...checkboxValues, [checkboxName]: isChecked });
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     return;
   };
   // consoling
@@ -111,7 +113,7 @@ const MultiStepForm = () => {
     const data = { ...formData };
     axios
       .post(
-        "https://sheet.best/api/sheets/523a0668-0032-4e7d-849e-913f9a22b963",
+        "https://sheet.best/api/sheets/364a8f6e-d98c-4f53-be86-8b172ed66256",
         data
       )
       .then((response) => {
@@ -275,7 +277,7 @@ const MultiStepForm = () => {
           <>
             <div className="form-wrapaper">
               <p className="form-heading">Connect with us:</p>
-              <p className="stroke-heading">+91-9599449323</p>
+              <p className="stroke-heading">+91-9667729323</p>
               <p className="intrested">
                 Are you interested in getting free consultation?
               </p>

@@ -31,6 +31,15 @@ function about() {
                   unique business needs. Our tagline says it all – A Complete
                   Startup Solution for Your Business Growth.
                 </p>
+
+                <p  className="abt-paragraph">
+                Your go-to digital marketing agency for startups. We understand the unique challenges that come with starting and growing a business, and we're here to help you navigate the ever-evolving world of digital marketing. </p>
+
+                <p className="abt-paragraph" > Our team of experienced digital marketers is dedicated to helping your startup succeed. We offer a wide range of services to help you reach your target audience and grow your business, including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content marketing, email marketing, and more.</p>
+
+<p className="abt-paragraph"> Our team is committed to staying up-to-date with the latest trends and best practices in digital marketing. We attend industry conferences, read industry publications, and participate in online communities to stay on top of the latest developments in our field. This allows us to provide our clients with the most effective and innovative solutions to their marketing challenges.</p>
+
+<p className="abt-paragraph" >If you're a digital marketing agency for startups looking to take your digital marketing to the next level, look no further than StartupMantra.co. Contact us today to learn more about our services and how we can help your business grow.</p>
                 <p className="abt-paragraph">
                   We at Startup Mantra helps startups to get registered and grow
                   their business online. We offer a variety of services to our

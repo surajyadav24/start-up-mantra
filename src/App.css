@@ -171,3 +171,26 @@
   padding: 120px 0px;
   padding-bottom: 50px !important;
 }
+.whatsapp-wrap{
+  position: fixed;
+  top: 89%;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 9999999;
+}
+.whatsapp-wrap img{
+  width: 50px;
+}
+
+.call-wrap{
+  position: fixed;
+  top: 89%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 99999;
+}
+.call-wrap img{
+width:50px ;
+}

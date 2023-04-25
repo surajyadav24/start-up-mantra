@@ -62,7 +62,7 @@ function Footer() {
           <div className="row">
             <div className="col-lg-12">
               <div className="privacy">
-                © 2012-2023 Startup Mantra All rights reserved
+                © 2012-2023 Startup Mantra. All rights reserved.
               </div>
             </div>
           </div>

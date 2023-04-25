@@ -18,7 +18,7 @@ function ContactusContent() {
         <div className="icon">
           <img src={phone} alt="" />
         </div>
-        <p>+91-95994 49323</p>
+        <p>+91-9667729323</p>
       </div>
       <div className="icon-wrapper">
         <div className="icon">

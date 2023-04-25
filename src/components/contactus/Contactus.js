@@ -22,7 +22,7 @@ function Contactus() {
     const data = { ...formData };
     axios
       .post(
-        "https://sheet.best/api/sheets/523a0668-0032-4e7d-849e-913f9a22b963",
+        "https://sheet.best/api/sheets/364a8f6e-d98c-4f53-be86-8b172ed66256",
         data
       )
       .then((response) => {
@@ -52,7 +52,7 @@ function Contactus() {
           type="text"
           name="emailaddress"
           placeholder="E-mail Address"
-          value={formData.email || ""}
+          value={formData.emailaddress || ""}
           onChange={handleInputChange}
         />
         <input
